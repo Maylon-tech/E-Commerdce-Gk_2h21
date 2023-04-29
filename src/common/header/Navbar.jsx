@@ -12,7 +12,8 @@ const Navbar = () => {
           <div className="categories d_flex">
             <span className="fa-solid fa-border-all"></span>
             <h4>
-              Categories <i className='fa fa-chevron-down'></i>
+              Categories 
+              <i className='fa fa-chevron-down'></i>
             </h4>
           </div>
 
@@ -45,7 +46,7 @@ const Navbar = () => {
             <button className='toggle' onClick={() => setMobileMenu(!MobileMenu)}>
               {
                 MobileMenu ? <i className='fas  fa-times close home-btn'></i>
-                           : <i className="fas fa-bars open"></i>
+                           : <i className="fa-solid fa-bars open"></i>
               }
             </button>
           </div>
