@@ -1,31 +1,38 @@
 import React from 'react'
-
+// import GiClothes from 'react-icons/gi'
+// import AiFillCar from 'react-icons/ai'
+import Clothe from '../../common/assets/images/clotheIcon.png'
+import Car from '../../common/assets/images/carIcon.png'
+import Gift from '../../common/assets/images/giftsIcon.png'
+import Music from '../../common/assets/images/musicIcon.png'
+import Eletronic from '../../common/assets/images/eletronicIcon.png'
+import Books from '../../common/assets/images/booksIcon.png'
 
 const Categories = () => {
 
   const data = [
     {
-      cateImg: "./images/category/cat1.png",
+      cateImg: Clothe,
       cateName: "Fashion",
     },
     {
-      cateImg: "./images/category/cat2.png",
+      cateImg: Eletronic,
       cateName: "Electronic",
     },
     {
-      cateImg: "./images/category/cat3.png",
+      cateImg: Car,
       cateName: "Cars",
     },
     {
-      cateImg: "./images/category/cat4.png",
-      cateName: "Home & Garden",
+      cateImg: Books,
+      cateName: "Books",
     },
     {
-      cateImg: "./images/category/cat5.png",
+      cateImg: Gift,
       cateName: "Gifts",
     },
     {
-      cateImg: "./images/category/cat6.png",
+      cateImg: Music,
       cateName: "Music",
     },
   ]
@@ -38,7 +45,7 @@ const Categories = () => {
           data.map((value, index) => {
             return (
               <div className="box f_flex">
-                <img src={value.cateImg} alt="imgCat" />
+                <img src={value.cateImg} alt="iIMG" />
                 <span>{value.cateName}</span>
               </div>
             )

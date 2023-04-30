@@ -1,8 +1,15 @@
 import React from 'react'
+import SliderCard from './SlideCard'
 
 const Slider = () => {
   return (
-    <div>Slider</div>
+    <>
+      <section className="homeSlide contentWidth">
+        <div className="container">
+          <SliderCard />
+        </div>
+      </section>
+    </>
   )
 }
 
