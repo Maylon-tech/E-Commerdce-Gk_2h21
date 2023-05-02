@@ -1,6 +1,8 @@
-
+import React,{ useState } from 'react'
 import './App.css'
-import Header from './common/header/Header';
+
+import Header from './common/header/Header'
+import Data from './components/flashDeals/data'
 
 import {
   BrowserRouter as Router,
@@ -8,16 +10,17 @@ import {
   Route
 } from 'react-router-dom'
 
-import Pages from './pages/Pages';
+import Pages from './pages/Pages'
 
-function App() {
+const App = () => {
+  // Step 1: fetch data from database
+  const { productItems } = Data
+  const [cartItem, setCartItem] = useState([])
+
+
   return (
     <Router>
-      <div className="App">
         <Header />
-       
-      </div>
-
       <Routes>
         <Route path="/" element={ <Pages /> } />
       </Routes>
