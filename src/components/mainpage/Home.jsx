@@ -10,6 +10,7 @@ const Home = () => {
             <div className="container d_flex">
                 <Categories />
                 <Slider />
+                
             </div>
         </section>
     </>

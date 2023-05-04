@@ -1,5 +1,4 @@
-const Data = {
-  productItems: [
+const productItems = [
     {
       id: 1,
       discount: 50,
@@ -42,6 +41,6 @@ const Data = {
       name: "Shoes",
       price: 100,
     },
-  ],
-}
-export default Data
+  ]
+
+export default productItems

@@ -14,7 +14,7 @@ import Pages from './pages/Pages'
 
 const App = () => {
   // Step 1: fetch data from database
-  const { productItems } = Data
+  const  productItems = Data
   const [cartItem, setCartItem] = useState([])
 
 
