@@ -4,12 +4,6 @@ import { Link } from 'react-router-dom'
 
 const Search = () => {
 
-  window.addEventListener("scroll", () => {
-    const search = document.querySelector(".search")
-    search.classList.toggle("active", this.window.scrollY > 100)
-  })
-
-
   return (
     <>
       <section className="search">

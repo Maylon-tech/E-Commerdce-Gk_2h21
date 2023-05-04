@@ -2,11 +2,8 @@ import React from 'react'
 // Import from React-SLick
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-
 import Slider from "react-slick"  // Importing from react-slick lib doc.
-
 import Sdata from './Sdata'  // Slider Data Contents
-
 
 const SlideCard = () => {
     // Slider Configurations
@@ -22,7 +19,6 @@ const SlideCard = () => {
       },
     };
   
-
     return (
       <>
         <Slider {...settings}>   {/*Import from React Slick*/}
