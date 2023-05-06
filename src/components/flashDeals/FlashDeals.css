@@ -1,0 +1,54 @@
+
+.flashDeals {
+    height: 80vh;
+}
+.flashDeals .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flashDeals .heading h1,
+.flashDeals .heading i  {
+    padding: 1.5rem 0;
+}
+
+
+/*  Flash Card Component  */
+
+.card-content {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    justify-content: center;
+    place-items: center;
+
+}
+
+.card {
+    border-radius: 7px;
+    border: 3px solid rgb(67, 51, 171);
+    width: 250px;
+    height: 320px;
+    background-color: #eee;
+}
+.card h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.card .favorite {
+    color: red;
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+}
+
+.card .btn-card {
+    padding: 1rem;
+    border-radius: 3px;
+}

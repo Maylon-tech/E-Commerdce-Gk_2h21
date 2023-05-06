@@ -1,45 +1,35 @@
+
+import flashDealsImage from '../../common/assets/images/FlashDeals_Cards/flashDeals.jpg'
+import favoriteIcon from '../../common/assets/images/FlashDeals_Cards/favoriteIcon.png'
+
 const productItems = [
     {
       id: 1,
       discount: 50,
-      cover: "./images/flash/flash-1.png",
-      name: "Shoes",
-      price: 100,
+      cover: flashDealsImage,
+      name: "Fresh Acai",
+      icon: favoriteIcon,
     },
     {
       id: 2,
       discount: 40,
-      cover: "./images/flash/flash-2.png",
-      name: "Watch",
+      cover: flashDealsImage,
+      name: "Delivery options",
       price: 20,
     },
     {
       id: 3,
       discount: 40,
-      cover: "./images/flash/flash-3.png",
-      name: "Smart Mobile Black",
+      cover: flashDealsImage,
+      name: "pre-call for table",
       price: 200,
     },
     {
       id: 4,
       discount: 40,
-      cover: "./images/flash/flash-4.png",
-      name: "Smart Watch Black",
+      cover: flashDealsImage,
+      name: "New Features",
       price: 50,
-    },
-    {
-      id: 5,
-      discount: 50,
-      cover: "./images/flash/flash-1.png",
-      name: "Shoes",
-      price: 100,
-    },
-    {
-      id: 6,
-      discount: 50,
-      cover: "./images/flash/flash-3.png",
-      name: "Shoes",
-      price: 100,
     },
   ]
 

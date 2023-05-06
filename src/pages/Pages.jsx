@@ -2,11 +2,11 @@ import React from 'react'
 import Home from '../components/mainpage/Home'
 import FlashDeals from '../components/flashDeals/FlashDeals'
 
-const Pages = ({ productItems }) => {
+const Pages = () => {
   return (
     <>
         <Home />
-        <FlashDeals productItems={productItems} />
+        <FlashDeals />
     </>
   )
 }

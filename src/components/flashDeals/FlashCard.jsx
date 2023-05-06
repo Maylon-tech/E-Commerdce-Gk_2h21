@@ -1,6 +1,6 @@
 import React from 'react'
 import productItems from './data'
-import './FlashDeals'
+
 
 const FlashCard = () => {
 
@@ -11,11 +11,11 @@ const FlashCard = () => {
         productItems.map((item) => {
           return (
             <div className='card'>
-              <span>{item.discount}</span>
+              
               <img src={item.cover} alt="" />
               <h3>{item.name}</h3>
-              <span>{item.price}</span>
-              <button>+</button>
+              <button className='btn-card'>Veja Mais</button>
+              <img className='favorite' src={item.icon} alt="" />
             </div>
           )
         })
