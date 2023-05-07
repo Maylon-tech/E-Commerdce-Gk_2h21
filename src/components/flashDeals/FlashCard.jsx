@@ -2,7 +2,7 @@ import React from 'react'
 import productItems from './data'
 
 
-const FlashCard = () => {
+const FlashCard = ({ addToCart }) => {
 
  
   return (
@@ -14,8 +14,18 @@ const FlashCard = () => {
               
               <img src={item.cover} alt="" />
               <h3>{item.name}</h3>
-              <button className='btn-card'>Veja Mais</button>
-              <img className='favorite' src={item.icon} alt="" />
+              <div className='buttons'>
+                <div className='btn-seeMore'>
+                  <button className='btn-card'>Veja Mais</button>
+                </div>
+                <div className='button-icon'>
+                  <i class="fa-regular fa-heart"></i>
+                  <button className='btn-cart' onclick={() => addToCart()}>
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                  </button>              
+                </div>
+              </div>
+
             </div>
           )
         })

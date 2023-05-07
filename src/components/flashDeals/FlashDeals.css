@@ -19,15 +19,14 @@
     grid-template-columns: repeat(4, 4fr);
     justify-content: center;
     place-items: center;
-
 }
 
 .card {
     border-radius: 7px;
-    border: 3px solid rgb(67, 51, 171);
     width: 250px;
-    height: 320px;
+    height: 360px;
     background-color: #eee;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.6);
 }
 .card h3 {
     margin-top: 1rem;
@@ -42,13 +41,52 @@
 }
 
 .card .favorite {
-    color: red;
     font-size: 1rem;
     width: 30px;
     height: 30px;
 }
 
-.card .btn-card {
-    padding: 1rem;
+.card .buttons {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 12px;
+}
+.card .btn-seeMore {
     border-radius: 3px;
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+.card .btn-seeMore .btn-card {
+    border-radius: 3px;
+    padding: .6rem;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.card .buttons .button-icon {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: .6rem;
+}
+.card .button-icon .fa-heart {
+    font-size: 1.4rem;
+    color: #333;
+    cursor: pointer;
+}
+.card .button-icon .btn-cart {
+    background-color: green;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.card .button-icon .btn-cart i {
+    padding: .4rem;
+    color: #fff;
+    font-size: 1rem;
 }
